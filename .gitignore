@@ -36,7 +36,4 @@ lerna-debug.log*
 # Coverage / tests
 coverage/
 
-# Optional: local data copies (keep your canonical CSV somewhere else)
-public/data/*.csv
-!public/data/.gitkeep
 
