@@ -1,0 +1,42 @@
+# dependencies
+node_modules/
+
+# production build output
+dist/
+dist-ssr/
+
+# vite cache
+.vite/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env files
+.env
+.env.*.local
+
+# Coverage / tests
+coverage/
+
+# Optional: local data copies (keep your canonical CSV somewhere else)
+public/data/*.csv
+!public/data/.gitkeep
+

@@ -1,0 +1,111 @@
+body {
+  margin: 30px;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #ffffff;   /* changed from black */
+  color: #111111;        /* dark text for contrast */
+}
+
+#chart {
+  margin-top: 20px;
+}
+
+/* Fallback: shrink any line label text inside EventDrops svg */
+.event-drops svg text {
+  font-size: 10px;
+}
+
+.tooltip {
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  max-width: 500px;
+  z-index: 9999;
+}
+
+.messages {
+  margin-top: 16px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 12px;
+}
+
+.messages h2 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.messagesList {
+  max-height: 420px;         /* scrollable panel */
+  overflow: auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.msgRow {
+  display: grid;
+  grid-template-columns: 170px 120px 140px 1fr;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.msgRow:last-child {
+  border-bottom: none;
+}
+
+.msgCell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.msgText {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.msgRow.isSelected {
+  background: #fff7d6;
+  outline: 2px solid #ffd24a;
+  outline-offset: -2px;
+}
+
+.dropzone {
+  margin-top: 12px;
+  border: 2px dashed #cfcfcf;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fafafa;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.dropzone:focus {
+  outline: 3px solid #cfe3ff;
+  outline-offset: 2px;
+}
+
+.dropzone.isDragOver {
+  background: #eef6ff;
+  border-color: #6aa6ff;
+}
+
+.dz-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.dz-sub {
+  font-size: 13px;
+  color: #444;
+}
+
+.dz-input {
+  display: none;
+}

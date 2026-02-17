@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Incident Timeline (EventDrops)</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Incident Timeline</h1>
+
+        <div id="dropzone" class="dropzone" role="button" tabindex="0">
+          <div class="dz-title">Drag & drop a CSV here</div>
+          <div class="dz-sub">…or click to choose a file (format: index, datetime, player, channel, message)</div>
+          <input id="fileInput" class="dz-input" type="file" accept=".csv,text/csv" />
+        </div>
+      </header>
+      <main>
+        <div id="chart"></div>
+        <section id="messages" class="messages">
+          <h2>Messages</h2>
+          <div id="messagesList" class="messagesList"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
