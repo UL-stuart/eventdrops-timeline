@@ -70,7 +70,8 @@ async function main() {
 
 
   // 1) Initial load from public/data/discount.csv (optional default)
-  const initialCsv = await loadCsv("/data/discount3.csv");
+  const initialCsv = await loadCsv(`${import.meta.env.BASE_URL}data/discount3.csv`);
+
   renderFromCsvText(initialCsv);
   setDropzoneStatus("Drop a CSV to load a different session");
 
